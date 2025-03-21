@@ -4,6 +4,7 @@ from typing import Any, Dict, Optional
 from pydantic import BaseModel, Field
 
 
+# 工具基类, 所有工具类都继承自该类
 class BaseTool(ABC, BaseModel):
     name: str
     description: str
